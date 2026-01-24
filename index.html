@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Render Soul - Portafolio de Isaac Loreno Aquino. Ilustrador, diseñador gráfico y artista 3D. Modelado 3D, ilustración digital y edición de video.">
+    <meta name="keywords" content="render, 3D, ilustración, diseño gráfico, modelado, video, portafolio, artista">
+    <meta name="author" content="Isaac Loreno Aquino">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Render Soul | Portafolio de Arte Digital y 3D">
+    <meta property="og:description"
+        content="Ilustrador, diseñador gráfico y artista 3D. Especializado en modelado 3D, ilustración digital y edición de video.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rendersoul.lat/">
+
+    <title>Render Soul | Portafolio de Arte Digital y 3D</title>
+
+    <!-- Google Fonts - Gaming Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <div class="logo-icon">RS</div>
+                <span class="logo-text">Render Soul</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#portafolio">Proyectos</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <a href="#contacto" class="nav-cta">Contrátame</a>
+
+            <button class="menu-toggle" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Gaming Style -->
+    <section id="inicio" class="hero">
+        <div class="hero-main">
+            <!-- Background Text -->
+            <div class="hero-bg-text">RENDER</div>
+
+            <!-- Hero Image -->
+            <img src="assets/images/la real.png" alt="Arte 3D - Render Soul" class="hero-image">
+
+            <!-- Hero Content -->
+            <div class="hero-content">
+                <span class="hero-label">Artista Digital</span>
+
+                <h1 class="hero-title">
+                    RENDER<br>
+                    <span class="outline">SOUL</span>
+                </h1>
+
+                <p class="hero-description">
+                    La belleza en una imagen. Especializado en modelado 3D, ilustración digital
+                    y edición de video. Transformo ideas en experiencias visuales impactantes.
+                </p>
+
+                <div class="hero-cta">
+                    <a href="#portafolio" class="btn btn-primary">
+                        <i class="fas fa-eye"></i>
+                        Ver Proyectos
+                    </a>
+                    <a href="#contacto" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Contactar
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Sidebar - Project Preview -->
+        <aside class="hero-sidebar">
+            <h3 class="hero-sidebar-title">Proyectos Destacados</h3>
+
+            <div class="project-preview">
+                <div class="project-preview-item active">
+                    <img src="assets/images/PS5.png" alt="PlayStation 5" class="project-preview-img">
+                    <div class="project-preview-info">
+                        <span class="project-preview-category">3D</span>
+                        <span class="project-preview-name">PlayStation 5</span>
+                    </div>
+                </div>
+
+                <div class="project-preview-item">
+                    <img src="assets/images/Screenshot 2025-12-12 220026.png" alt="Interiores"
+                        class="project-preview-img">
+                    <div class="project-preview-info">
+                        <span class="project-preview-category">3D</span>
+                        <span class="project-preview-name">Interiores</span>
+                    </div>
+                </div>
+
+                <div class="project-preview-item">
+                    <img src="assets/images/Screenshot 2025-12-12 220126.png" alt="Props" class="project-preview-img">
+                    <div class="project-preview-info">
+                        <span class="project-preview-category">3D</span>
+                        <span class="project-preview-name">Props & Objetos</span>
+                    </div>
+                </div>
+
+                <div class="project-preview-item">
+                    <img src="assets/images/project-ilustracion-iris.png" alt="Iris" class="project-preview-img">
+                    <div class="project-preview-info">
+                        <span class="project-preview-category">Ilustración</span>
+                        <span class="project-preview-name">Iris</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portafolio" class="section portfolio">
+        <div class="container">
+            <div class="portfolio-header reveal">
+                <div class="section-header">
+                    <span class="section-label">Portafolio</span>
+                    <h2 class="section-title">MIS <span class="accent">TRABAJOS</span></h2>
+                </div>
+
+                <!-- Filters -->
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="3d">Modelado 3D</button>
+                    <button class="filter-btn" data-filter="ilustracion">Ilustración</button>
+                    <button class="filter-btn" data-filter="video">Video</button>
+                </div>
+            </div>
+
+            <!-- Bento Grid -->
+            <div class="portfolio-grid">
+
+                <!-- ========== MODELADO 3D ========== -->
+
+                <!-- Proyecto 3D 1 - PS5 -->
+                <article class="project-card large reveal" data-category="3d" data-image="assets/images/PS5.png"
+                    data-title="PlayStation 5"
+                    data-description="Modelado 3D realista de la consola PlayStation 5. Texturizado y renderizado de alta fidelidad.">
+                    <div class="project-image">
+                        <img src="assets/images/PS5.png" alt="PlayStation 5 3D">
+                    </div>
+                    <div class="project-overlay">
+                        <span class="project-category">Modelado 3D</span>
+                        <h3 class="project-title">PlayStation 5</h3>
+                        <p class="project-description">Modelado 3D realista de consola</p>
+                    </div>
+                    <div class="project-action">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </article>
+
+                <!-- Proyecto 3D 2 - Escenario Int. -->
+                <article class="project-card reveal" data-category="3d"
+                    data-image="assets/images/Screenshot 2025-12-12 220026.png" data-title="Escenario de Interiores"
+                    data-description="Renderizado de interiores con iluminación dinámica y materiales realistas.">
+                    <div class="project-image">
+                        <img src="assets/images/Screenshot 2025-12-12 220026.png" alt="Interiores 3D">
+                    </div>
+                    <div class="project-overlay">
+                        <span class="project-category">Modelado 3D</span>
+                        <h3 class="project-title">Interiores</h3>
+                        <p class="project-description">Visualización arquitectónica</p>
+                    </div>
+                    <div class="project-action">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </article>
+
+                <!-- Proyecto 3D 3 - Modelado de Objetos -->
+                <article class="project-card reveal" data-category="3d"
+                    data-image="assets/images/Screenshot 2025-12-12 220126.png" data-title="Diseño de Objetos"
+                    data-description="Modelado de props y objetos complejos con atención al detalle en la geometría.">
+                    <div class="project-image">
+                        <img src="assets/images/Screenshot 2025-12-12 220126.png" alt="Props 3D">
+                    </div>
+                    <div class="project-overlay">
+                        <span class="project-category">Modelado 3D</span>
+                        <h3 class="project-title">Props & Objetos</h3>
+                        <p class="project-description">Modelado de elementos</p>
+                    </div>
+                    <div class="project-action">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </article>
+
+                <!-- Proyecto 3D 4 - Environment -->
+                <article class="project-card reveal" data-category="3d"
+                    data-image="assets/images/Screenshot 2025-12-12 220141.png" data-title="Entorno Digital"
+                    data-description="Creación de entornos digitales complejos con texturizado detallado.">
+                    <div class="project-image">
+                        <img src="assets/images/Screenshot 2025-12-12 220141.png" alt="Environment 3D">
+                    </div>
+                    <div class="project-overlay">
+                        <span class="project-category">Modelado 3D</span>
+                        <h3 class="project-title">Entornos</h3>
+                        <p class="project-description">Escenarios virtuales</p>
+                    </div>
+                    <div class="project-action">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </article>
+
+                <!-- Proyecto 3D 5 - Renderizado Avanzado -->
+                <article class="project-card reveal" data-category="3d"
+                    data-image="assets/images/Screenshot 2025-12-12 220349.png" data-title="Composición 3D"
+                    data-description="Estudio de composición y renderizado fotorrealista.">
+                    <div class="project-image">
+                        <img src="assets/images/Screenshot 2025-12-12 220349.png" alt="Render 3D">
+                    </div>
+                    <div class="project-overlay">
+                        <span class="project-category">Modelado 3D</span>
+                        <h3 class="project-title">Composición</h3>
+                        <p class="project-description">Renderizado avanzado</p>
+                    </div>
+                    <div class="project-action">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </article>
+
+                <!-- ========== ILUSTRACIÓN ========== -->
+
+                <!-- Proyecto Ilustración 1 -->
+                <article class="project-card reveal" data-category="ilustracion"
+                    data-image="assets/images/project-ilustracion-iris.png" data-title="Iris"
+                    data-description="Ilustración digital detallada 'Iris'.">
+                    <div class="project-image">
+                        <img src="assets/images/project-ilustracion-iris.png" alt="Iris Ilustración">
+                    </div>
+                    <div class="project-overlay">
+                        <span class="project-category">Ilustración</span>
+                        <h3 class="project-title">Iris</h3>
+                        <p class="project-description">Arte digital</p>
+                    </div>
+                    <div class="project-action">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </article>
+
+                <!-- Proyecto Ilustración 2 -->
+                <article class="project-card reveal" data-category="ilustracion"
+                    data-image="assets/images/project-ilustracion-mesa1.png" data-title="Concept Art 01"
+                    data-description="Diseño conceptual y exploración visual.">
+                    <div class="project-image">
+                        <img src="assets/images/project-ilustracion-mesa1.png" alt="Concept Art">
+                    </div>
+                    <div class="project-overlay">
+                        <span class="project-category">Ilustración</span>
+                        <h3 class="project-title">Concept Art</h3>
+                        <p class="project-description">Diseño visual</p>
+                    </div>
+                    <div class="project-action">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </article>
+
+                <!-- Proyecto Ilustración 3 -->
+                <article class="project-card reveal" data-category="ilustracion"
+                    data-image="assets/images/project-ilustracion-mesa2.png" data-title="Estudio de Color"
+                    data-description="Aplicación de teoría de color en ilustraciones digitales.">
+                    <div class="project-image">
+                        <img src="assets/images/project-ilustracion-mesa2.png" alt="Color Study">
+                    </div>
+                    <div class="project-overlay">
+                        <span class="project-category">Ilustración</span>
+                        <h3 class="project-title">Teoría de Color</h3>
+                        <p class="project-description">Estudio cromático</p>
+                    </div>
+                    <div class="project-action">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </article>
+
+                <!-- Proyecto Ilustración 4 -->
+                <article class="project-card reveal" data-category="ilustracion"
+                    data-image="assets/images/project-ilustracion-mesa3.png" data-title="Arte Digital Pro"
+                    data-description="Ilustración de alta complejidad y composición.">
+                    <div class="project-image">
+                        <img src="assets/images/project-ilustracion-mesa3.png" alt="Digital Art">
+                    </div>
+                    <div class="project-overlay">
+                        <span class="project-category">Ilustración</span>
+                        <h3 class="project-title">Composiciones</h3>
+                        <p class="project-description">Arte digital avanzado</p>
+                    </div>
+                    <div class="project-action">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </article>
+
+                <!-- Proyecto Ilustración 5 -->
+                <article class="project-card reveal" data-category="ilustracion"
+                    data-image="assets/images/project-ilustracion-mesa4.png" data-title="Ilustración Final"
+                    data-description="Acabados y texturas en ilustración digital profesional.">
+                    <div class="project-image">
+                        <img src="assets/images/project-ilustracion-mesa4.png" alt="Final Illustration">
+                    </div>
+                    <div class="project-overlay">
+                        <span class="project-category">Ilustración</span>
+                        <h3 class="project-title">Detalles Finales</h3>
+                        <p class="project-description">Texturizado digital</p>
+                    </div>
+                    <div class="project-action">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section - Story Style -->
+    <section id="sobre-mi" class="section about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content reveal">
+                    <div class="section-header">
+                        <span class="section-label">Historia</span>
+                        <h2>ISAAC LORENO<br><span class="accent">AQUINO</span></h2>
+                    </div>
+
+                    <p>
+                        Soy un apasionado ilustrador, diseñador gráfico y artista 3D con años de experiencia
+                        creando contenido visual impactante. Mi misión es dar vida a ideas a través de
+                        imágenes que no solo comunican, sino que emocionan.
+                    </p>
+                    <p>
+                        Especializado en modelado 3D, ilustración digital y edición de video, trabajo
+                        con las herramientas más avanzadas de la industria. Cada proyecto es una oportunidad
+                        para superar límites y crear algo extraordinario.
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Proyectos</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Especialidades</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">∞</div>
+                            <div class="stat-label">Creatividad</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-visual reveal">
+                    <div class="about-visual-item">
+                        <img src="assets/images/hero-bg.png" alt="Isaac Loreno Aquino">
+                    </div>
+                    <div class="about-visual-item">
+                        <img src="assets/images/project-3d-ps5.png" alt="Trabajo 3D">
+                    </div>
+                    <div class="about-visual-item">
+                        <img src="assets/images/project-ilustracion-iris.png" alt="Ilustración">
+                        <div class="about-visual-accent">
+                            <p>La belleza<br>en una imagen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="section services">
+        <div class="container">
+            <div class="section-header" style="text-align: center; margin-bottom: 4rem;">
+                <span class="section-label" style="padding-left: 0;">Servicios</span>
+                <h2 class="section-title">LO QUE PUEDO HACER</h2>
+            </div>
+
+            <div class="services-grid reveal">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>Modelado 3D</h3>
+                    <p>
+                        Creación de modelos 3D de alta calidad para videojuegos, animación y
+                        visualización. Props, armas, criaturas y personajes con texturas PBR.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Ilustración Digital</h3>
+                    <p>
+                        Ilustraciones personalizadas, pósters de películas y series, concept art y
+                        diseño de personajes. Estilo realista y estilizado.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Edición de Video</h3>
+                    <p>
+                        Edición profesional de videos musicales, comerciales, motion graphics y
+                        contenido para redes sociales. Color grading incluido.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="section contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <div class="section-header">
+                        <span class="section-label">Contacto</span>
+                        <h2>¿TIENES UN<br>PROYECTO?</h2>
+                    </div>
+
+                    <p>
+                        Estoy disponible para proyectos freelance y colaboraciones.
+                        Cuéntame tu idea y hagámosla realidad juntos.
+                    </p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-method-text">
+                                <span>Email</span>
+                                <strong>contacto@rendersoul.lat</strong>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-method-text">
+                                <span>Ubicación</span>
+                                <strong>Latinoamérica</strong>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-method-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-method-text">
+                                <span>Disponibilidad</span>
+                                <strong>Lun - Vie, 9am - 6pm</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal" id="contact-form">
+                    <div class="form-header">
+                        <h3>Envíame un mensaje</h3>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="country">País</label>
+                            <input type="text" id="country" name="country" placeholder="Tu país">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">Ciudad</label>
+                            <input type="text" id="city" name="city" placeholder="Tu ciudad">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" placeholder="Cuéntame sobre tu proyecto..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">
+                    <div class="logo-icon">RS</div>
+                    <span class="logo-text">Render Soul</span>
+                </a>
+
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="Behance">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Render Soul. Todos los derechos reservados. Diseñado por Isaac Loreno Aquino.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Cerrar">
+                <i class="fas fa-times"></i>
+            </button>
+            <img src="" alt="" id="lightbox-img">
+            <iframe src="" id="lightbox-video" allowfullscreen></iframe>
+            <div class="lightbox-info">
+                <h3 class="lightbox-title" id="lightbox-title"></h3>
+                <p class="lightbox-description" id="lightbox-desc"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
