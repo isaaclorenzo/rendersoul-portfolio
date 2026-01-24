@@ -39,7 +39,50 @@
     --glow-spread: 0 0 40px var(--accent-glow);
 }
 
-/* Cursor personalizado eliminado para usar el puntero del sistema */
+/* ---------- Custom Cursor ---------- */
+@media (pointer: fine) {
+    * {
+        cursor: none !important;
+    }
+
+    .cursor-dot {
+        position: fixed;
+        width: 8px;
+        height: 8px;
+        background: var(--accent-primary);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9999;
+        transform: translate(-50%, -50%);
+        transition: transform 0.1s ease, width 0.2s ease, height 0.2s ease;
+        mix-blend-mode: difference;
+    }
+
+    .cursor-ring {
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        border: 2px solid var(--accent-primary);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9998;
+        transform: translate(-50%, -50%);
+        transition: all 0.15s ease-out;
+        opacity: 0.6;
+    }
+
+    .cursor-ring.hover {
+        width: 60px;
+        height: 60px;
+        border-color: var(--accent-secondary);
+        opacity: 1;
+    }
+
+    .cursor-dot.hover {
+        transform: translate(-50%, -50%) scale(2);
+        background: var(--accent-secondary);
+    }
+}
 
 
 /* ---------- Reset & Base ---------- */
@@ -61,25 +104,6 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
-    /* Grid Background Pattern */
-    background-image:
-        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-    background-size: 50px 50px;
-    background-position: center top;
-}
-
-/* Background Vignette */
-body::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at center, transparent 0%, var(--bg-dark) 100%);
-    pointer-events: none;
-    z-index: -1;
 }
 
 a {
@@ -639,36 +663,6 @@ button {
     transform-style: preserve-3d;
     perspective: 1000px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* Cyberpunk Corner Accents */
-    border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.project-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background:
-        linear-gradient(to right, var(--accent-primary) 2px, transparent 2px) 0 0,
-        linear-gradient(to bottom, var(--accent-primary) 2px, transparent 2px) 0 0,
-        linear-gradient(to left, var(--accent-primary) 2px, transparent 2px) 100% 0,
-        linear-gradient(to bottom, var(--accent-primary) 2px, transparent 2px) 100% 0,
-        linear-gradient(to right, var(--accent-primary) 2px, transparent 2px) 0 100%,
-        linear-gradient(to top, var(--accent-primary) 2px, transparent 2px) 0 100%,
-        linear-gradient(to left, var(--accent-primary) 2px, transparent 2px) 100% 100%,
-        linear-gradient(to top, var(--accent-primary) 2px, transparent 2px) 100% 100%;
-    background-size: 10px 10px;
-    background-repeat: no-repeat;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-    z-index: 20;
-}
-
-.project-card:hover::before {
-    opacity: 1;
 }
 
 .project-card:hover {
